@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pirate Adventure | Roblox Game</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #021d2d;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 1rem 2rem;
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #00bfff;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #00bfff;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('81e43024-73eb-4012-b8c4-208823ef34bc.png') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 600px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      color: #00bfff;
+    }
+
+    .hero p {
+      margin: 1rem 0;
+      font-size: 1.2rem;
+    }
+
+    .btn {
+      background: #00bfff;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #007acc;
+    }
+
+    /* Rules Section */
+    .rules {
+      padding: 5rem 2rem;
+      background: #032c44;
+      text-align: center;
+    }
+
+    .rules h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .rules ul {
+      list-style: none;
+      max-width: 600px;
+      margin: auto;
+      line-height: 2rem;
+    }
+
+    /* Contact Section */
+    .contact {
+      padding: 5rem 2rem;
+      background: #021d2d;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .contact p {
+      margin-bottom: 1.5rem;
+    }
+
+    .discord-btn {
+      background: #5865f2;
+    }
+
+    .discord-btn:hover {
+      background: #404ecf;
+    }
+
+    /* Footer */
+    footer {
+      background: #010f18;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+      nav ul {
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">🏴‍☠️ Pirate Adventure</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#rules">Game Rules</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Set Sail for Adventure!</h1>
+      <p>Join the epic Roblox world of Pirate Adventure. Explore islands, find treasure, and rule the seas!</p>
+      <a href="https://www.roblox.com" target="_blank" class="btn">Play Now</a>
+    </div>
+  </section>
+
+  <section id="rules" class="rules">
+    <h2>⚓ Game Rules</h2>
+    <ul>
+      <li>1️⃣ Respect all fellow pirates — no griefing or bullying.</li>
+      <li>2️⃣ No exploiting or using cheats — the seas must stay fair!</li>
+      <li>3️⃣ Team up to battle sea monsters and discover hidden islands.</li>
+      <li>4️⃣ Protect your loot — but remember, pirates share booty!</li>
+      <li>5️⃣ Have fun and stay loyal to your crew!</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>🦜 Contact Us</h2>
+    <p>Got a question or want to join our crew?</p>
+    <a href="https://discord.gg/yCNmZ33AHv" target="_blank" class="btn discord-btn">Join Our Discord</a>
+  </section>
+
+  <footer>
+    <p>© 2025 Pirate Adventure | Made with 🏴‍☠️ on the high seas</p>
+  </footer>
+
+</body>
+</html>
